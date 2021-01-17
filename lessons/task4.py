@@ -5,10 +5,10 @@
 money = float(input("Введите выручку"))
 loose = float(input("Введите издержки"))
 if money > loose:
-    differens = money / loose
+    differens = (money - loose) / money
     print(f"Фирма с прибылью. Ее рентабельность равна = {differens}")
     emploee = float(input("Введите количество сотрудников"))
-    emploemoney = money / emploee
+    emploemoney = (money - loose) / emploee
     print(f"Прибыль на одного сотрудника равна {emploemoney}")
 elif money == loose:
     print("Прибыль и издержки одинаковы")
